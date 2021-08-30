@@ -18,3 +18,5 @@ RUN curl -O 'https://ftp.ripe.net/ripe/atlas/software-probe/centos8/noarch/ripe-
 yum install ripe-atlas-repo-1-2.el8.noarch.rpm -y && \
 yum install atlasswprobe -y && \
 echo 'chown atlas:atlas /var/atlas-probe/etc/' >> cat /etc/rc.local
+
+LABEL org.opencontainers.image.source="https://github.com/ahmetozer/ripe-atlas-probe"
